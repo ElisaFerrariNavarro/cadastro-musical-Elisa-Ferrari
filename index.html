@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu principal - sistema Musical</title>
+    <link rel="icon" href="data:image/svg+xml,🎵">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- container usada em todas as telas, menos no login-->
+    <div class="container">
+
+ <!-- barra de cima que joga o botão Sair pra direita -->
+    <div class="topbar">
+        <!-- Um link com cara de botão -->
+        <!-- na sprint 2 este link vai pra logout.php -->
+      <a href="login.html" class="btn-back">🚪 Sair</a>
+    </div>
+
+     <!-- page-header: as boas-vindas -->
+    <div class="page-header">
+        <h1>🎵 Sistema Musical</h1>
+        <!-- "admin está fixo (dado fake). Na sprint 2 o php mostra o nome de quem entrou" -->
+       <p>Olá,<strong>admin</strong>! O que deseja fazer?</p>
+    </div>
+
+    <!-- cada menu card tem um link -->
+    <div class="menu-grid">
+        <div class="menu-card">
+            <a href="cadastro_artista.html">
+                <div class="menu-card-icon">🎤</div>
+                <div class="menu-card-title">Gerenciar Artistas</div>
+                <div class="menu-card-desc">Cadastra e edite artistas</div>
+            </a>
+        </div>
+        
+        <div class="menu-card">
+            <a href="cadastro_musica.html">
+                <div class="menu-card-icon">🎵</div>
+                <div class="menu-card-title">Cadastrar Músicas</div>
+                <div class="menu-card-desc">Adicione músicas ao sistema</div>
+            </a>
+        </div>
+
+        <div class="menu-card">
+            <a href="listagem_musicas.html">
+                <div class="menu-card-icon">🎼</div>
+                <div class="menu-card-title">Biblioteca Musical</div>
+                <div class="menu-card-desc">Visualize e filtre todas as músicas</div>
+            </a>
+        </div>
+        
+    </div>
+
+
+</div>
+</body>
+</html>

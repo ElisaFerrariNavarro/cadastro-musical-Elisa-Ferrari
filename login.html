@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - sistema Musical</title>
+    <link rel="icon" href="data:image/svg+xml,🎵">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="login-page">
+
+    <!-- a caixa branca que guarda o login inteiro -->
+<div class="login-card">
+    
+    <!-- Título e subtítulo, centralizados pelo css -->
+    <div class="login-header">
+        <h1>🎵 Sistema Musical</h1>
+        <p>Entre com suas credenciais</p>
+    </div>
+    
+    <!-- Formulário de login -->
+     <form action="index.html" method="get"></form>
+        <!-- junta um rótulo e seu campo -->
+        <div class="form-group">
+            <!-- for="usuario" é igual ao id do input: clicar no texto foca no campo -->
+             <label for="usuario">Usuário</label>
+             <input type="text"
+                id="usuario"
+                name="usuario"
+                required
+                autocomplete="username"
+                placeholder="Seu usuário">
+
+                <!-- type="Text": campo de texto comum -->
+        </div>
+
+        <div class="form-group">
+            <label for="senha">Senha</label>
+            <input type="password"
+            id="senha"
+            name="senha"
+            required
+            autocomplete="current-password"
+            placeholder="Sua senha">
+        </div>
+
+        <button type="submit" class="btn-primary">Entrar</button>
+     </form>
+
+     <div class="login-hint">
+        <strong>Credenciais de teste:</strong><br>
+        Usuário: <code>admin</code> &nbsp; &nbsp; Senha: <code>123</code>
+     </div>
+
+    </div>
+</body>
+</html>
